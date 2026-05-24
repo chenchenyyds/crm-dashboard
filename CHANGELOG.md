@@ -5,6 +5,16 @@ All notable changes to NextCRM are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1](https://github.com/chenchenyyds/crm-dashboard/compare/v1.0.0...v1.0.1) (2026-05-24)
+
+
+### Bug Fixes
+
+* **crm:** add error boundaries for graceful database unavailable message ([2c36e08](https://github.com/chenchenyyds/crm-dashboard/commit/2c36e08d7649a8ed28d19df02576c6330a38c420))
+* **crm:** fix CSV export type error, add vercel.json with custom build command ([2a0565e](https://github.com/chenchenyyds/crm-dashboard/commit/2a0565ec685ead2cde5680364a4e013babde0e0d))
+* **crm:** fix CSV export type errors - use Record type and remove unused import ([3a657a6](https://github.com/chenchenyyds/crm-dashboard/commit/3a657a61e2bbef834e31511776cb83177c4341e5))
+* **crm:** remove baseline references — GitHub API URL, funding, package name ([4c89634](https://github.com/chenchenyyds/crm-dashboard/commit/4c89634f14b59a166d3ccb668c6f1de5b07b5cf8))
+
 ## [0.12.1](https://github.com/pdovhomilja/nextcrm-app/compare/v0.12.0...v0.12.1) (2026-05-11)
 
 
