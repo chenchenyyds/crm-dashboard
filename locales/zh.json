@@ -1,0 +1,90 @@
+{
+  "RootLayout": {
+    "title": "NextCRM",
+    "description": "NextCRM 是一个基于 NextJS 构建的开源 CRM 系统。"
+  },
+  "ModuleMenu": {
+    "dashboard": "仪表板",
+    "crm": {
+      "title": "销售",
+      "accounts": "公司",
+      "opportunities": "商机",
+      "contacts": "联系人",
+      "leads": "线索",
+      "contracts": "合同",
+      "products": "产品",
+      "targets": "目标",
+      "targetLists": "目标列表"
+    },
+    "projects": "项目",
+    "emails": "邮件",
+    "tasks": "任务",
+    "reports": "报表",
+    "documents": "文档",
+    "invoices": "发票",
+    "storage": "存储",
+    "settings": "管理"
+  },
+  "DashboardPage": {
+    "containerTitle": "仪表板",
+    "totalRevenue": "总收入",
+    "containerDescription": "欢迎使用 NextCRM，在这里您可以查看所有重要的业务信息。",
+    "expectedRevenue": "预期收入",
+    "activeUsers": "活跃用户",
+    "accounts": "公司",
+    "opportunities": "商机",
+    "contacts": "联系人",
+    "leads": "线索",
+    "contracts": "合同",
+    "projects": "项目",
+    "tasks": "任务",
+    "myTasks": "我的任务",
+    "documents": "文档",
+    "storage": "存储",
+    "invoices": "发票",
+    "campaigns": "营销活动",
+    "targets": "目标"
+  },
+  "RegisterComponent": {
+    "cardTitle": "创建新账户",
+    "cardDescription": "通过以下方式登录",
+    "label": "语言",
+    "locale": "{locale, select, de {德语} en {英语} cz {捷克语} uk {乌克兰语} zh {中文} other {未知}}"
+  },
+  "CrmModuleMenuComponent": {
+    "menuTitle": "销售"
+  },
+  "Common": {
+    "success": "成功",
+    "error": "错误",
+    "cancel": "取消",
+    "create": "创建",
+    "update": "更新",
+    "activate": "激活",
+    "savingData": "正在保存...",
+    "somethingWentWrong": "出错了，请重试。",
+    "assignedTo": "分配给",
+    "selectUser": "选择用户",
+    "description": "描述",
+    "priorityLabel": "优先级",
+    "priorityPlaceholder": "选择优先级",
+    "low": "低",
+    "medium": "中",
+    "high": "高",
+    "critical": "紧急"
+  },
+  "LanguageSelector": {
+    "english": "英语",
+    "czech": "捷克语",
+    "german": "德语",
+    "ukrainian": "乌克兰语",
+    "chinese": "中文",
+    "selectPlaceholder": "选择语言...",
+    "searchPlaceholder": "搜索语言...",
+    "noResult": "未找到语言。",
+    "loadingModal": "正在切换语言...",
+    "success": "语言已更改",
+    "changedTo": "语言已更改为 {language}",
+    "error": "更改语言时出错"
+  }
+}
