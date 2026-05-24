@@ -19,7 +19,7 @@ function exportToCSV(rows: Account[]) {
   const headers = ["Name", "Email", "Status", "Assigned To", "Created"];
   const csvRows = rows.map((row) => {
     const assigned = (row.assigned_to_user as { name?: string } | null)?.name ?? "";
-    const created = row.createdAt ? new Date(row.createdAt as string).toISOString().slice(0, 10) : "";
+    const created = row.createdAt ? new Date(row.createdAt).toISOString().slice(0, 10) : "";
     return [row.name, row.email, row.status, assigned, created]
       .map((v) => `"${String(v ?? "").replace(/"/g, '""')}"`)
       .join(",");
