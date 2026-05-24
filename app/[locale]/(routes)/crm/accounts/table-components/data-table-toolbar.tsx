@@ -9,17 +9,16 @@ import { DataTableViewOptions } from "./data-table-view-options";
 
 import { statuses } from "../table-data/data";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";
-import { Account } from "../table-data/schema";
-
 interface DataTableToolbarProps<TData> {
   table: Table<TData>;
 }
 
-function exportToCSV(rows: Account[]) {
+function exportToCSV(rows: Record<string, unknown>[]) {
   const headers = ["Name", "Email", "Status", "Assigned To", "Created"];
   const csvRows = rows.map((row) => {
     const assigned = (row.assigned_to_user as { name?: string } | null)?.name ?? "";
-    const created = row.createdAt ? new Date(row.createdAt).toISOString().slice(0, 10) : "";
+    const createdAt = row.createdAt as Date | string | undefined;
+    const created = createdAt ? new Date(createdAt).toISOString().slice(0, 10) : "";
     return [row.name, row.email, row.status, assigned, created]
       .map((v) => `"${String(v ?? "").replace(/"/g, '""')}"`)
       .join(",");
@@ -42,7 +41,7 @@ export function DataTableToolbar<TData>({
   const isFiltered = table.getState().columnFilters.length > 0;
 
   const handleExport = () => {
-    const rows = table.getFilteredRowModel().rows.map((r) => r.original as unknown as Account);
+    const rows = table.getFilteredRowModel().rows.map((r) => r.original as unknown as Record<string, unknown>);
     exportToCSV(rows);
   };
 
